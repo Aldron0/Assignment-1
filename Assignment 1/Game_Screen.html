@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel = "stylesheet" type = "text/css" href = "Game_Screen.css">
+    <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+    <script type = "text/javascript" src = "Pawn.js" defer></script>
+    <script type = "text/javascript" src = "Game_Manager.js" defer></script>
+    <script type = "text/javascript" src = "Dice.js" defer></script>
+    </head>
+
+    <div id = "background">
+			<div id = "leftColor" class = "colorbox"> </div>
+			<div id = "centerColor" class = "colorbox"> </div>
+			<div id = "rightColor" class = "colorbox"> </div>
+    </div>
+
+    <div id = "content">
+        <body>
+            <h3><center>This is the game Screen</center></h3>
+            <section class = "right">
+                <div id = "sideMenu">
+                        <center><h1 id = "sideMenuTitle">Information about Your Current Game</h1></center>
+                        <center>
+                            <p id = "diceNum"></p>
+                            <button id = "diceButton">Roll Dice</button>
+                        </center>
+                        <center>
+                            <h1>Game State</h1>
+                            <p id = "gameState"></p>
+                            <button id = "confirmTurn">Confirm</button>
+                        </center>
+                </div>
+            </section>
+            <section class = "left">
+                <table id = "gameBoard">
+                    <tr class="boardSpace">
+                        <td colspan="4" rowspan="4" class="startPos yellowSpace">
+                            <div class = "pawn yellow" id = "y1"> </div>
+                            <div class = "pawn yellow" id = "y2"> </div>
+                            <div class = "pawn yellow" id = "y3"> </div>
+                            <div class = "pawn yellow" id = "y4"> </div>
+                        </td>
+                        <td class="yellowSpace yellowSart" id = "1"> </td>
+                        <td id = "2"> </td>
+                        <td id = "3"> </td>
+                        <td colspan="4" rowspan="4" class="startPos greenSpace">
+                            <div class = "pawn green" id = "g1"> </div>
+                            <div class = "pawn green" id = "g2"> </div>
+                            <div class = "pawn green" id = "g3"> </div>
+                            <div class = "pawn green" id = "g4"> </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id = "41"> </td>
+                        <td class="yellowSpace"> </td>
+                        <td id = "4"> </td>
+                    </tr>
+                    <tr>
+                        <td id = "40"> </td>
+                        <td class="yellowSpace"> </td>
+                        <td id = "5"> </td>
+                    </tr>
+                    <tr>
+                        <td id = "39"> </td>
+                        <td class="yellowSpace"> </td>
+                        <td id = "6"> </td>
+                    </tr>
+                    <tr>
+                        <td id = "34"> </td>
+                        <td id = "35"> </td>
+                        <td id = "36"> </td>
+                        <td id = "37"> </td>
+                        <td id = "38"> </td>
+                        <td class="yellowSpace"> </td>
+                        <td id = "7"> </td>
+                        <td id = "8"> </td>
+                        <td id = "9"> </td>
+                        <td id = "10"> </td>
+                        <td id = "11" class="greenSpace greenStart"> </td>
+                    </tr>
+                    <tr>
+                        <td id = "33"> </td>
+                        <td class="blueSpace"> </td>
+                        <td class="blueSpace"> </td>
+                        <td class="blueSpace"> </td>
+                        <td class="blueSpace"> </td>
+                        <td> </td>
+                        <td class="greenSpace"> </td>
+                        <td class="greenSpace"> </td>
+                        <td class="greenSpace"> </td>
+                        <td class="greenSpace"> </td>
+                        <td id = "12"> </td>
+                    </tr>
+                    <tr>
+                        <td id = "32" class="blueSpace blueStart"></td>                        
+                        <td id = "31"></td>
+                        <td id = "30"></td>
+                        <td id = "29"></td>
+                        <td id = "28"></td>
+                        <td class="redSpace"></td>
+                        <td id = "17"></td>
+                        <td id = "16"></td>
+                        <td id = "15"></td>
+                        <td id = "14"></td>
+                        <td id = "13"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" rowspan="4" class="startPos blueSpace"> 
+                            <div class = "pawn blue" id = "b1"> </div>
+                            <div class = "pawn blue" id = "b2"> </div>
+                            <div class = "pawn blue" id = "b3"> </div>
+                            <div class = "pawn blue" id = "b4"> </div>
+                        </td>
+                        <td id = "27"> </td>
+                        <td class="redSpace"> </td>
+                        <td id = "18"> </td>
+                        <td colspan="4" rowspan="4" class="startPos redSpace"> 
+                            <div class = "pawn red" id = "r1"> </div>
+                            <div class = "pawn red" id = "r2"> </div>
+                            <div class = "pawn red" id = "r3"> </div>
+                            <div class = "pawn red" id = "r4"> </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id = "26"> </td>
+                        <td class="redSpace"> </td>
+                        <td id = "19"> </td>
+                    </tr>
+                    <tr>
+                        <td id = "25"> </td>
+                        <td class="redSpace"> </td>
+                        <td id = "20"> </td>
+                    </tr>
+                    <tr>
+                        <td id = "23"> </td>
+                        <td id = "22"> </td>
+                        <td id = "21" class="redSpace redStart"> </td>
+                    </tr>
+                </table>
+            </section>
+        </body>
+    </div>
+</html>
