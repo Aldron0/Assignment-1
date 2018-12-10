@@ -1,36 +1,65 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <link rel = "stylesheet" type = "text/css" href = "Game_Screen.css">
-    <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-    <script type = "text/javascript" src = "Pawn.js" defer></script>
-    <script type = "text/javascript" src = "Game_Manager.js" defer></script>
-    <script type = "text/javascript" src = "Dice.js" defer></script>
+        <link rel = "stylesheet" type = "text/css" href = "Game_Screen.css">
+        <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+        <script type = "text/javascript" src = "Game_Manager.js" defer></script>
+        <script type = "text/javascript" src = "Pawn.js" defer></script>
+        <script type = "text/javascript" src = "Dice.js" defer></script>
     </head>
 
     <div id = "background">
-			<div id = "leftColor" class = "colorbox"> </div>
-			<div id = "centerColor" class = "colorbox"> </div>
-			<div id = "rightColor" class = "colorbox"> </div>
+		<div id = "leftColor" class = "colorbox"> </div>
+		<div id = "centerColor" class = "colorbox"> </div>
+		<div id = "rightColor" class = "colorbox"> </div>
+    </div>
+
+    <div id = "selectBox">
+        <center><p id = "header">Please Select your color</p></center>
+        <center>
+            <button class = "colorButton">RED</button>
+            <button class = "colorButton" >YELLOW</button>
+            <button class = "colorButton">GREEN</button>
+            <button class = "colorButton">BLUE</button>
+        </center>
     </div>
 
     <div id = "content">
         <body>
             <h3><center>This is the game Screen</center></h3>
+            <div id = "Waiting for players">
+                <center><h1>Waiting for players: 1/<span id = "players joined"></span></h1></center>
+            </div>
             <section class = "right">
                 <div id = "sideMenu">
                         <center><h1 id = "sideMenuTitle">Information about Your Current Game</h1></center>
                         <center>
-                            <p id = "diceNum"></p>
+                            <p id = "diceNum"> </p>
                             <button id = "diceButton">Roll Dice</button>
                         </center>
                         <center>
                             <h1>Game State</h1>
-                            <p id = "gameState"></p>
+                            <p id = "gameState"> </p>
                             <button id = "confirmTurn">Confirm</button>
+                        </center>
+                        <center><h1>Score</h1></center>
+
+                        <center>
+                            <div>
+                                <p class = "scoreColor">Red</p>
+                                <p class = "scoreColor">Yellow</p>
+                                <p class = "scoreColor">Blue</p>
+                                <p class = "scoreColor">Green</p>
+
+                                <p class = "scoreBox" id = "redScore"></p>
+                                <p class = "scoreBox" id = "yellowScore"></p>
+                                <p class = "scoreBox" id = "blueScore"></p>
+                                <p class = "scoreBox" id = "greenScore"></p>
+                            </div>
                         </center>
                 </div>
             </section>
+
             <section class = "left">
                 <table id = "gameBoard">
                     <tr class="boardSpace">
@@ -40,7 +69,7 @@
                             <div class = "pawn yellow" id = "y3"> </div>
                             <div class = "pawn yellow" id = "y4"> </div>
                         </td>
-                        <td class="yellowSpace yellowSart" id = "1"> </td>
+                        <td class="yellowSpace yellowStart" id = "1"> </td>
                         <td id = "2"> </td>
                         <td id = "3"> </td>
                         <td colspan="4" rowspan="4" class="startPos greenSpace">

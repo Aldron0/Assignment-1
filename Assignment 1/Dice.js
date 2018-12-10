@@ -12,13 +12,16 @@ var dice = {
 //Is supposed to print the number
 function placeNumber(num) {
 
-    var diceNum = document.getElementById('diceNum');
-    diceNum.innerHTML = num;
+    var diceNum = $('#diceNum');
+    diceNum.html(num);
 }
 
-var button = document.getElementById('diceButton');
+var diceButton = $('#diceButton');
 
-button.onclick = function() {
-    var result = dice.roll();
-    placeNumber(result);
-};
+diceButton.on('click', function() {
+    if (diceRolled == false) {
+        var result = dice.roll();
+        placeNumber(result);
+        diceRolled = true;
+    }
+});

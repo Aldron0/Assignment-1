@@ -39,6 +39,24 @@
     padding-top: 75px;
 }
 
+.blur {
+    filter: blur 5px;
+}
+
+.hide {
+    display: none;
+}
+
+#selectBox {
+    position: absolute;
+    height: 200px;
+    width: 500px;
+    border: solid black 2px;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -250px;
+}
+
   /*Background*/
   #background {
     position: absolute;
@@ -73,7 +91,7 @@
     padding: 10px;
     border: 2px solid black;
     margin: 0; 
-    height: 500px;
+    height: 700px;
     float: right;
 }
 
@@ -89,8 +107,24 @@
 
 #gameState {
     border: solid black 2px;
-    height: 30px;
+    height: 60px;
     text-align: center;
+}
+
+.scoreBox {
+    border: solid black 2px;
+    height: 3em;
+    width: 3em;
+    float: left;
+    margin: 5px;
+}
+
+.scoreColor {
+    border: solid black 2px;
+    height: 2em;
+    width: 3em;
+    float: left;
+    margin: 5px;
 }
 
 /*Game Board*/
@@ -103,7 +137,8 @@ tr, td {
     margin: 5px;
     border-radius: 9px;
     border: solid black 2px;
-    padding: 20px;
+    height: 50px;
+    width: 50px;
 }
 
 .redSpace {
@@ -128,8 +163,8 @@ tr, td {
     border-radius: 50%;
     border: solid black 5px;
     background: white; 
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     display: inline-block;
 }
 
