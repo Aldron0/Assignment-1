@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./stylesheets/About_The_Authors.css">
+        <link rel="stylesheet" type="text/css" href="./stylesheets/StyleSheet.css">
+    </head>
+    <div id = "background">
+        <div id = "leftColor" class = "colorbox"> </div>
+        <div id = "centerColor" class = "colorbox"> </div>
+        <div id = "rightColor" class = "colorbox"> </div>
+    </div>
+    <center><div id = 'screenTooSmall'>Your Screen is Too Small!</div></center>
+    <body>
+        <div id = 'content'>
+            <div id = 'navBarDiv'>
+                <ul id = "navBar">
+                    <li id = 'LudoLogo'><span id = 'logoR'>L</span><span id = 'logoG'>U</span><span id = 'logoB'>D</span><span id = 'logoY'>O</span></li>
+                    <li class = 'barItem'><a href = "Start_Screen.html">Home</a></li>
+                    <li class = 'barItem'><a href = "https://en.wikipedia.org/wiki/Ludo_(board_game)">Rules</a></li>
+                    <li class = 'barItem'><a href = "About_The_Authors.html">About the Project</a></li>
+                </ul>
+                    <div id = 'InfoBox'>
+                        <div id = 'Assignment1'>
+                            <h3>Game Features</h3>
+                            <p>
+                                -A dice that gets rolled to determine who goes first
+                                <br>
+                                -The ability to select a color
+                                <br>
+                                -Pawns that move around the board
+                                <br>
+                                -A game board with the appropriate sections and blocks
+                                <br>
+                                -A display for the current score
+                            </p>
+                            <h3>Game Screens</h3>
+                            <div class = 'left'>
+                                <img class = 'otherGameImg' src = './images/Screenshot_2.png'>
+                                <p class = 'img'>
+                                    -This game has a defined style
+                                    <br>
+                                    -It has an interesting board, and sufficient texures on the pawns.
+                                    <br>
+                                    -The UI and information about the game is a bit limeted
+                                    <br>
+                                    -While it has a lot of style it lacks coherence.
+                                </p>
+                            </div>
+                            <div class = 'right'>
+                                <img id = 'makethissmaller' class = 'otherGameImg' src = './images/Screenshot_3.png'>
+                                <p class = 'img'>
+                                    -This version is very well connected. 
+                                    <br>
+                                    -The UI and menus are informative 
+                                    <br>
+                                    -The chat function on the game board is handy
+                                    <br>
+                                    -Style and complexity are a little on the low side
+                                </p>
+                            </div>
+                        </div>
+                        <div id = 'Assignent2'>
+                            <div class = 'left shorter'>
+                                <h3>Design Patterns</h3>
+                                <p>
+                                    There are two game elements for which I have used object design Patterns.
+                                    <br>
+                                    -The player
+                                    <br>
+                                    -The game 
+                                    <br>
+                                    Both of these are implemented as different objects using the standard object constructor. The game constructor calls the player constructor. 
+                                    The feilds of the created object are later filled as players join and information is sent back from the clients
+                                </p>
+                            </div>
+                            <div class = 'right shorter'>
+                                <h3>Plan of Action</h3>
+                                <p>
+                                    -The dice must return a random number between 1 and 6
+                                    <br>
+                                    -Only one pawn is allowed to be selected at a time
+                                    <br>
+                                    -Each player has the choice of which color they want
+                                    <br>
+                                    -A player cannot choose an already chosen color
+                                    <br>
+                                    -There is a button to confirm the players choice of action
+                                    <br>
+                                    -There are mutliple different peices of text dynamically shown
+                                </p>
+                            </div>
+                        </div id = 'Assignment3'>
+                            <h3>CSS Inclusions</h3>
+                            <p>
+                                -Css animation in the background of the start screen.
+                                <br>
+                                -Css transition in the start screen menu buttons.
+                                <br>
+                                -Psuedo elements on both the start screen and the game screen.
+                                <br>
+                                -Fullscreen support on all pages.
+                                <br>
+                                -Media Queries to alert the player if his screen size is too small.
+                            </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

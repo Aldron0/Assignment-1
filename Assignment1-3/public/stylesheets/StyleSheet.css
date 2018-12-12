@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial;
+  }
+
+  html {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  #content {
+    width: 960px;
+    height: 100vh;
+    margin: 0px auto;
+    background-color: #aec6cf;
+    position: relative;
+    z-index: 3;
+    padding: 25px;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
+  }
+
+  #content:fullscreen {
+    background-color: red;
+  }
+
+  body {
+    background-color: #aec6cf;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@media only screen and (min-width: 1000px) {
+  #screenTooSmall {
+    display: none;
+  }
+}
+
+#screenTooSmall {
+  top: 50%;
+  right: 50%;
+  height: 150px; 
+  width: 300px;
+  padding: 50px;
+  margin: -75px 0 0 -150px;
+  background: white;
+  position: absolute;
+  z-index: 7;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<title>LUDO</title>
+			<link rel="stylesheet" type="text/css" href="./stylesheets/Start_Screen.css">
+			<link rel="stylesheet" type="text/css" href="./stylesheets/StyleSheet.css">
+		</head>
+		<div id = "background">
+			<div id = "leftColor" class = "colorbox"></div>
+			<div id = "centerColor" class = "colorbox"></div>
+			<div id = "rightColor" class = "colorbox"></div>
+		</div>
+		<center><div id = 'screenTooSmall'>Your Screen is Too Small!</div></center>
+		<body>
+			<div id = "content">
+				<div id = 'navBarDiv'>
+					<ul id = "navBar">
+						<li id = 'LudoLogo'><span id = 'logoR'>L</span><span id = 'logoG'>U</span><span id = 'logoB'>D</span><span id = 'logoY'>O</span></li>
+						<li class = 'barItem'><a href = "Start_Screen.html">Home</a></li>
+						<li class = 'barItem'><a href = "https://en.wikipedia.org/wiki/Ludo_(board_game)">Rules</a></li>
+						<li class = 'barItem'><a href = "About_The_Authors.html">About the Project</a></li>
+					</ul>
+				</div>
+				<main>
+					<section id = "center">
+						<center><h1 id = 'LudoMainLogo'><span id = 'logoR'>L </span><span id = 'logoG'>U </span><span id = 'logoB'>D </span><span id = 'logoY'>O</span></h1></center>
+						<div class="container">
+							<center><a class = "btn blue" href="Game_Screen.html">PLAY GAME</a></center>		
+						</div>
+						<center>
+							<div id = "Stat_Box">
+								<center><h2 id = "stat_title">Game Statistics</h2></center>
+								<center>
+									<p id = "stat1" class = 'stats'>Current Players: <%= currentPlayers %></p>
+									<p id = "stat2" class = 'stats'>Games Completed: <%= gamesCompleted %></p>
+									<p id = "stat3" class = 'stats'>Games Started: <%= gamesStarted %></p>
+								</center>
+							</div>
+						</center>
+					</section>
+				</main>
+			</div>
+		</body>
+	</div>
+</html>

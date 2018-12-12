@@ -1,0 +1,110 @@
+/*Background*/
+#background {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0 auto;
+}
+      
+.colorbox {
+    padding: 17vh 0;
+    transform: skewY(20deg);
+    margin: 0 auto;
+}
+      
+#rightColor {
+    background: #fdfd96;
+}
+      
+#leftColor {
+    background: #ff6961;
+}
+      
+#centerColor {
+    background: #77dd77;
+}
+
+
+/*NavBar*/
+.barItem {
+    float: left;
+}
+
+#navBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #333;
+}
+
+#LudoLogo {
+    float: left;
+    display: block;
+    padding: 14px 16px;
+}
+
+.barItem a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+
+}
+
+.barItem a:hover {
+
+    background-color: #111;
+}
+
+#logoG {
+    color: green;
+}
+
+#logoB {
+    color: blue;
+}
+
+#logoR {
+    color: red;
+}
+
+#logoY {
+    color: yellow;
+}
+
+.left {
+    float: left;
+    width: 50%;
+    height: 300px;
+    overflow: auto;
+}
+
+.right{
+    float: right;
+    width: 50%;
+    height: 300px;
+    overflow: auto;
+}
+
+.otherGameImg {
+    height: 250px;
+    width: auto;
+}
+
+#Assignment3 {
+    float: left;
+}
+
+.img {
+    text-align: top;
+}
+
+#makethissmaller {
+    width: 411px;
+}
+
+.shorter {
+    height: 250px;
+}
